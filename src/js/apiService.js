@@ -14,6 +14,10 @@ export default {
       .then((res) => res.json())
       .then((data) => {
         markup(data);
+        window.scrollTo({
+          top: document.documentElement.offsetHeight,
+          behavior: "smooth",
+        });
       });
   },
   pageIncrement() {
